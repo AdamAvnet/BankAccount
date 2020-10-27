@@ -22,23 +22,23 @@ public class Tester{
 				test = test4;
 			System.out.println();
 			System.out.println();
-			System.out.println("Starting Balance: " + test.getBalance());
 			System.out.println("AccountID: " + ((int) test.getAccountID()));
 			System.out.println("Password: " + test.getPassword());
+			System.out.println("Starting Balance: " + test.getBalance());
 			test.setPassword("newpassword");
 			System.out.println("New Password: " + test.getPassword());
-			if(Math.random() > 0.2)
+			if(Math.random() > 0.3)
 			deposit = 1500 * i;
 			else
 			deposit = -1500 * i;
-			System.out.println("Attempted deposit: " + (deposit) + "  " + test.deposit(deposit));
+			System.out.println("Attempted Deposit: " + (deposit) + "  " + test.deposit(deposit));
 			System.out.println("New Balance: " + test.getBalance());
 			if(Math.random() > 0.3)
-			withdrawal = 3001;
+			withdrawal = 2099;
 			else
-			withdrawal = -3001;
-			System.out.println("Attempted withdrawal: " + (withdrawal) + " " + test.withdraw(withdrawal));
-			System.out.println("New Balance(post withdraw): " + test.getBalance());
+			withdrawal = -2099;
+			System.out.println("Attempted Withdrawal: " + (withdrawal) + " " + test.withdraw(withdrawal));
+			System.out.println("New Balance(post withdrawal): " + test.getBalance());
 			System.out.println(test.toString());
 		}
 	}
