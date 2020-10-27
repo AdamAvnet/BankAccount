@@ -19,6 +19,12 @@ public class BankAccount {
 		return accountID;
 	}
 
+	// For testing purposes, it was easier to add a getPassword() method.
+
+	public String getPassword(){
+		return password;
+	}
+
 	public void setPassword(String newPass){
 		password = newPass;
 	}
