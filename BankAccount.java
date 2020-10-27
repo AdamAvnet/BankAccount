@@ -49,7 +49,7 @@ public class BankAccount {
 
 	public String toString(){
 
-		String output = "" + accountID + "	" + balance;
+		String output = "" + accountID + "\t" + balance;
 		return output;
 	}
 }
